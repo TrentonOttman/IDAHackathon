@@ -12,3 +12,6 @@ https://colab.research.google.com/drive/14U2YpPdS_t_od6fD1rqus9TGX8aUe_o8#scroll
 
 Trenton's values
 https://colab.research.google.com/drive/1deoHnO6wH1wUmya4NTbcxFSYmzgpioiW?usp=sharing
+
+Priyanshu's Notebook
+https://colab.research.google.com/drive/15YsCcumI19CkR9a4tMlklp7yfhb5CWQG?usp=sharing
