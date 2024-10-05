@@ -5,6 +5,14 @@
 #include <unordered_map>
 #include <iomanip> // for std::setprecision
 
+// Function to trim leading and trailing spaces
+std::string trim(const std::string& str) {
+    size_t first = str.find_first_not_of(' ');
+    if (first == std::string::npos) return "";
+    size_t last = str.find_last_not_of(' ');
+    return str.substr(first, last - first + 1);
+}
+
 int main() {
     // File name (you can modify it to the actual CSV file)
     std::string fileName = "production_data.csv";
@@ -23,74 +31,62 @@ int main() {
     // Define a map to hold counts for CA1-CA8, CB1-CB3, CC1-CC7, CD1-CD6, CE1-CE9
     std::unordered_map<std::string, int> countMap;
 
-    // Adding CA1 to CA8
+    // Initialize counts for each category
     for (int i = 1; i <= 8; ++i) {
         countMap["CA" + std::to_string(i)] = 0;
     }
-
-    // Adding CB1 to CB3
     for (int i = 1; i <= 3; ++i) {
         countMap["CB" + std::to_string(i)] = 0;
     }
-
-    // Adding CC1 to CC7
     for (int i = 1; i <= 7; ++i) {
         countMap["CC" + std::to_string(i)] = 0;
     }
-
-    // Adding CD1 to CD6
     for (int i = 1; i <= 6; ++i) {
         countMap["CD" + std::to_string(i)] = 0;
     }
-
-    // Adding CE1 to CE9
     for (int i = 1; i <= 9; ++i) {
         countMap["CE" + std::to_string(i)] = 0;
     }
 
     int totalCA = 0, totalCB = 0, totalCC = 0, totalCD = 0, totalCE = 0;  // To hold total counts for each group
-    std::string line, cell;
+    std::string line;
 
     // Read file line by line
     while (std::getline(file, line)) {
         std::stringstream lineStream(line);
+        std::string cell;
+        int cellIndex = 0; // To track which cell we are currently processing
 
         // Read each cell (comma-separated value) in the line
         while (std::getline(lineStream, cell, ',')) {
+            // Trim spaces from the cell
+            cell = trim(cell);
+            cellIndex++; // Increment cell index
+            
             // Check for CAx
             if (cell.rfind("CA", 0) == 0) {
                 totalCA++;  // Increment total "CA" count
-                if (countMap.find(cell) != countMap.end()) {
-                    countMap[cell]++;
-                }
+                countMap[cell]++;
             }
             // Check for CBx
             else if (cell.rfind("CB", 0) == 0) {
                 totalCB++;  // Increment total "CB" count
-                if (countMap.find(cell) != countMap.end()) {
-                    countMap[cell]++;
-                }
+                countMap[cell]++;
             }
             // Check for CCx
             else if (cell.rfind("CC", 0) == 0) {
                 totalCC++;  // Increment total "CC" count
-                if (countMap.find(cell) != countMap.end()) {
-                    countMap[cell]++;
-                }
+                countMap[cell]++;
             }
             // Check for CDx
             else if (cell.rfind("CD", 0) == 0) {
                 totalCD++;  // Increment total "CD" count
-                if (countMap.find(cell) != countMap.end()) {
-                    countMap[cell]++;
-                }
+                countMap[cell]++;
             }
             // Check for CEx
             else if (cell.rfind("CE", 0) == 0) {
                 totalCE++;  // Increment total "CE" count
-                if (countMap.find(cell) != countMap.end()) {
-                    countMap[cell]++;
-                }
+                countMap[cell]++;
             }
         }
     }
@@ -107,6 +103,8 @@ int main() {
                   << std::setprecision(2) << std::fixed << percentage << "% of total CA occurrences)." << std::endl;
     }
 
+    std::cout << std::endl;
+
     // Output the results for CB1 to CB3
     std::cout << "The string 'CB' occurs " << totalCB << " times in total." << std::endl;
     for (int i = 1; i <= 3; ++i) {
@@ -115,6 +113,8 @@ int main() {
         std::cout << key << " occurs " << countMap[key] << " times (" 
                   << std::setprecision(2) << std::fixed << percentage << "% of total CB occurrences)." << std::endl;
     }
+
+    std::cout << std::endl;
 
     // Output the results for CC1 to CC7
     std::cout << "The string 'CC' occurs " << totalCC << " times in total." << std::endl;
@@ -125,6 +125,8 @@ int main() {
                   << std::setprecision(2) << std::fixed << percentage << "% of total CC occurrences)." << std::endl;
     }
 
+    std::cout << std::endl;
+
     // Output the results for CD1 to CD6
     std::cout << "The string 'CD' occurs " << totalCD << " times in total." << std::endl;
     for (int i = 1; i <= 6; ++i) {
@@ -134,6 +136,8 @@ int main() {
                   << std::setprecision(2) << std::fixed << percentage << "% of total CD occurrences)." << std::endl;
     }
 
+    std::cout << std::endl;
+
     // Output the results for CE1 to CE9
     std::cout << "The string 'CE' occurs " << totalCE << " times in total." << std::endl;
     for (int i = 1; i <= 9; ++i) {
@@ -142,6 +146,8 @@ int main() {
         std::cout << key << " occurs " << countMap[key] << " times (" 
                   << std::setprecision(2) << std::fixed << percentage << "% of total CE occurrences)." << std::endl;
     }
+
+    std::cout << std::endl;
 
     return 0;
 }
