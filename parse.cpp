@@ -107,8 +107,6 @@ int main() {
                   << std::setprecision(2) << std::fixed << percentage << "% of total CA occurrences)." << std::endl;
     }
 
-    std::cout << std::endl;
-
     // Output the results for CB1 to CB3
     std::cout << "The string 'CB' occurs " << totalCB << " times in total." << std::endl;
     for (int i = 1; i <= 3; ++i) {
@@ -117,8 +115,6 @@ int main() {
         std::cout << key << " occurs " << countMap[key] << " times (" 
                   << std::setprecision(2) << std::fixed << percentage << "% of total CB occurrences)." << std::endl;
     }
-
-    std::cout << std::endl;
 
     // Output the results for CC1 to CC7
     std::cout << "The string 'CC' occurs " << totalCC << " times in total." << std::endl;
@@ -129,8 +125,6 @@ int main() {
                   << std::setprecision(2) << std::fixed << percentage << "% of total CC occurrences)." << std::endl;
     }
 
-    std::cout << std::endl;
-
     // Output the results for CD1 to CD6
     std::cout << "The string 'CD' occurs " << totalCD << " times in total." << std::endl;
     for (int i = 1; i <= 6; ++i) {
@@ -140,8 +134,6 @@ int main() {
                   << std::setprecision(2) << std::fixed << percentage << "% of total CD occurrences)." << std::endl;
     }
 
-    std::cout << std::endl;
-
     // Output the results for CE1 to CE9
     std::cout << "The string 'CE' occurs " << totalCE << " times in total." << std::endl;
     for (int i = 1; i <= 9; ++i) {
@@ -150,8 +142,6 @@ int main() {
         std::cout << key << " occurs " << countMap[key] << " times (" 
                   << std::setprecision(2) << std::fixed << percentage << "% of total CE occurrences)." << std::endl;
     }
-
-    std::cout << std::endl;
 
     return 0;
 }
