@@ -40,3 +40,14 @@ for i in range(15):
 
 print(best_sum)
 print(best_value)
+
+
+## dict syntax
+    hashmap = {"a":20,"b":30}
+    res = ''
+    maxVal = 0
+    for i in hashmap.keys():
+        if hashmap[i] > maxVal:
+            maxVal = hashmap[i]
+            res = i
+    print(i)
