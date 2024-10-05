@@ -2,6 +2,9 @@ Percents
 
 https://docs.google.com/spreadsheets/d/1VtCvOg1ETKJkyrTejKTtjELFLIwaSEshsXv1ALvGBGQ/edit?usp=sharing
 
+Gavin's notebook
+https://colab.research.google.com/drive/1AX39uTdMbGv1grosmfcyXvJODQ16KeBQ#scrollTo=BX8hfa3p0LON
+
 
 Evan's notebook
 
