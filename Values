@@ -31,3 +31,8 @@ Optimized values (150 space)
 
 2 Worket Total: 86400.0
 2 Worker Repair: 0.0
+
+Percent change with optimizations
+Original -> New order: 3.284335201607421
+New Order -> Reorder/Allocations: 82.99879723207172
+Total change: 83.55717371927545
