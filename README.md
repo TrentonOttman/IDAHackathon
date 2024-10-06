@@ -1,3 +1,5 @@
+Presentation: https://docs.google.com/presentation/d/1MmrG2RJBFBwFfhRBxQ3EGoeUy91owPAZ-bCVYNQLINM/edit?usp=sharing
+
 Master Copy:
 https://colab.research.google.com/drive/1NyPPyGaMfXUH8juIsYJaqLW2uoAkKMct?usp=sharing
 
