@@ -19,6 +19,8 @@ https://colab.research.google.com/drive/1deoHnO6wH1wUmya4NTbcxFSYmzgpioiW?usp=sh
 Trenton's values 150
 https://colab.research.google.com/drive/1rC4QD2K8v-TxCFSMagpJZ5KJsknWLmDD?usp=sharing
 
+Priyanshu's notebook (baseline for graphs): https://colab.research.google.com/drive/1yON0q6LFM1uG0KavqG52VdSDfBxbGjUK?usp=sharing
+
 
 // presentation
 
