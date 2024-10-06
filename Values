@@ -1,0 +1,26 @@
+Default Values:
+1 Worker: 297868.5
+2 Workers: 212626.5
+3 Workers: 233584.5
+4 Workers: 271143.0
+
+Default Values With Order Improvement:
+1 Worker Total: 288085.5
+1 Worker Repair: 244885.5
+
+2 Worker Total: 203862.0
+2 Worker Repair: 117462.0
+
+3 Worker Total: 223237.5
+3 Worker Repair: 93637.5
+
+
+Optimized values:
+1 Worker Total: 48978.0
+1 Worker Repair: 5778.0
+
+2 Worker Total: 86737.5
+2 Worker Repair: 337.5
+
+3 Worker Total: 129777.0
+3 Worker Repair: 177.0
