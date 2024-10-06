@@ -20,15 +20,15 @@ https://colab.research.google.com/drive/1deoHnO6wH1wUmya4NTbcxFSYmzgpioiW?usp=sh
 
 // presentation
 
-649 kinds of cars
-33 different parts
-studied correlation to figure out if there's a connection between different parts
-looked into the variance to order the assembly station
-but noticed issue with this approach because of varying amounts of parts in categories
-hence calculated and introduced variance coefficient and got the relative standard deviation
-ordered the stations correctly
-calculated usage data grouped by different part types and used it to allocate stock.
-noticed a U trend (show a graph here ) and found the optimal value for the restock to trigger by automating the min value detection
-// detail KPIs but also keep throwing them in between the slides to make it non technical
+649 kinds of cars, 
+33 different parts, 
+studied correlation to figure out if there's a connection between different parts, 
+looked into the variance to order the assembly station, 
+but noticed issue with this approach because of varying amounts of parts in categories, 
+hence calculated and introduced variance coefficient and got the relative standard deviation, 
+ordered the stations correctly, 
+calculated usage data grouped by different part types and used it to allocate stock, 
+noticed a U trend (show a graph here ) and found the optimal value for the restock to trigger by automating the min value detection, 
+// detail KPIs but also keep throwing them in between the slides to make it non technical, 
 
-// add the part about 150
+// add the part about 150.
